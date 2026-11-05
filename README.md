@@ -69,7 +69,28 @@ A tarefa é de **classificação binária** (*Alive* ou *Deceased*), com ênfase
 
 ## ▶️ Como Executar  
 
-1. Clone este repositório:  
+### Opção 1: Google Colab (recomendado)
+
+1. Abra o notebook direto no Colab:
+   [Rede_neural_Classificação.ipynb](https://colab.research.google.com/github/FelipeYabiko/RedeNeural/blob/main/Rede_neural_Classifica%C3%A7%C3%A3o.ipynb)
+2. Clique em **Ambiente de execução → Executar tudo**.
+3. O notebook instala o `kagglehub` e baixa o dataset sozinho; não é preciso subir nenhum arquivo.
+
+### Opção 2: Localmente
+
+1. Clone este repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-   cd SEU_REPOSITORIO
+   git clone https://github.com/FelipeYabiko/RedeNeural.git
+   cd RedeNeural
+   ```
+2. Instale as dependências:
+   ```bash
+   pip install kagglehub pandas numpy matplotlib seaborn scikit-learn jupyter
+   ```
+3. Abra o notebook e execute as células em ordem:
+   ```bash
+   jupyter notebook "Rede_neural_Classificação.ipynb"
+   ```
+
+> O download do dataset pelo `kagglehub` pode pedir login no Kaggle. Se pedir, siga as instruções de
+> [autenticação do kagglehub](https://github.com/Kaggle/kagglehub#authenticate).
